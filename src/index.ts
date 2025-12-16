@@ -10,6 +10,8 @@ app.get("/", (c) => {
   });
 });
 
+app.get("/health", (c) => c.json("OK"));
+
 app.get("/list-komoditas", async (c) => {
   try {
     const page = Number(c.req.query("page") ?? 1);
