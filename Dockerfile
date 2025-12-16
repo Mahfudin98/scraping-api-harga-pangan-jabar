@@ -8,9 +8,6 @@ COPY package.json bun.lock tsconfig.json ./
 # copy source
 COPY src ./src
 
-# copy RSA keys
-COPY private.pem public.pem ./
-
 # install dependencies
 RUN bun install --production
 
