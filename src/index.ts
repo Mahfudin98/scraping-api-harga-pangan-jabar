@@ -10,7 +10,7 @@ app.get("/", (c) => {
   });
 });
 
-app.get("/health", (c) => c.json("OK"));
+app.get("/health", (c) => c.text("OK"));
 
 app.get("/list-komoditas", async (c) => {
   try {
